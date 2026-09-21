@@ -3,43 +3,43 @@
 # image will be published to ghcr.io/<user>/<name>
 name: pupzite
 # description will be included in the image's metadata
-description: This is my personal OS image.
+description: Like Bazzite, but with floppy ears 🐶.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-main
-image-version: latest # You can pin to a specific version of Fedora as well
+base-image: ghcr.io/ublue-os/bazzite
+image-version: stable # You can pin to a specific version of Fedora as well
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - from-file: dnf.yml
+  - from-file: flatpak.yml
+
   - type: files
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-  - type: dnf
-    repos:
-      copr:
-        - atim/starship
-    install:
-      packages:
-        - micro
-        - starship
-    remove:
-      packages:
-        # example: removing firefox (in favor of the flatpak)
-        # "firefox" is the main package, "firefox-langpacks" is a dependency
-        - firefox
-        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+  - type: script
+    snippets:
+      - "rm -rf /usr/share/applications/Waydroid"
+      - "rm -f /usr/share/applications/bazzite-documentation.desktop"
+      - "rm -f /usr/share/applications/bazzite-steam-bpm.desktop"
+      - "rm -f /usr/share/applications/bbrew.desktop"
+      - "rm -f /usr/share/applications/discourse.desktop"
+      - "rm -f /usr/share/applications/system-update.desktop"
+      - "rm -f /usr/share/applications/waydroid-container-restart.desktop"
+      - "rm -f /usr/libexec/waydroid-container-restart"
+      - "rm -f /usr/libexec/waydroid-container-start"
+      - "rm -f /usr/libexec/waydroid-container-stop"
+      - "rm -f /usr/libexec/waydroid-fix-controllers"
+      - "rm -f /usr/share/containers/systemd/cockpit-container.container"
+      - "rm -f /etc/xdg/autostart/bazzite-announcement.desktop"
 
-  - type: default-flatpaks
-    configurations:
-      - notify: true # Send notification after install/uninstall is finished (true/false)
-        scope: system
-        # If no repo information is specified, Flathub will be used by default
-        install: # system flatpaks we want all users to have and not remove
-          - org.mozilla.firefox
-          - org.gnome.Loupe
-      - scope: user # Also add Flathub user repo, but no user packages
+  - type: os-release
+    properties:
+      ID: pupzite
+      NAME: Pupzite
+      PRETTY_NAME: Pupzite
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
