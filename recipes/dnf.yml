@@ -7,6 +7,8 @@ repos:
   copr:
     enable:
       - scottames/ghostty
+  files:
+   - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
 install:
   packages:
     - zsh
@@ -18,7 +20,13 @@ install:
     - gh
     - btop
     - firefox
+    # TERRA
+    - terra-release
+    - terra-release-extras
+    - terra-gpg-keys
+    # COPR
     - ghostty
+    # URLs
     - https://vencord.dev/download/vesktop/amd64/rpm
 remove:
   packages:

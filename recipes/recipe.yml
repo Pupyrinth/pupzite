@@ -3,7 +3,7 @@
 # image will be published to ghcr.io/<user>/<name>
 name: pupzite
 # description will be included in the image's metadata
-description: Like Bazzite, but with floppy ears 🐶.
+description: Like Bazzite, but with floppy ears 🐶
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/bazzite
