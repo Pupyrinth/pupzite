@@ -1,0 +1,35 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "kernel",
+    "break",
+
+    "de",
+    "wm",
+    "break",
+
+    "terminal",
+    "shell",
+    "packages",
+    "break",
+
+    "cpu",
+    "gpu",
+    "memory",
+    "break",
+
+    {
+      "type": "command",
+      "key": "OS Age",
+      "text": "b=$(stat -c %W / 2>/dev/null); [ \"$b\" = \"0\" ] && b=$(stat -c %Z / 2>/dev/null); n=$(date +%s); s=$((n-b)); years=$((s/31536000)); s=$((s%31536000)); months=$((s/2592000)); s=$((s%2592000)); days=$((s/86400)); s=$((s%86400)); hours=$((s/3600)); s=$((s%3600)); mins=$((s/60)); secs=$((s%60)); out=\"\"; [ $years -ne 0 ] && out=\"$out$years y \"; [ $months -ne 0 ] && out=\"$out$months mo \"; [ $days -ne 0 ] && out=\"$out$days d \"; [ $hours -ne 0 ] && out=\"$out$hours h \"; [ $mins -ne 0 ] && out=\"$out$mins min \"; [ $secs -ne 0 ] && out=\"$out$secs s \"; [ -z \"$out\" ] && out=\"0 s\"; echo ${out% }",
+    },
+    "uptime",
+    "break",
+
+    "colors",
+  ],
+  "logo": "./wolf",
+}

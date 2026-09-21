@@ -8,22 +8,52 @@ repos:
     enable:
       - scottames/ghostty
   files:
-   - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+    - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+    - https://repository.mullvad.net/rpm/stable/mullvad.repo
 install:
   packages:
+    - vim
+    - vorta
     - zsh
     - fzf
     - zoxide
+    - gnome-disk-utility
     - fastfetch
     - hyfetch
     - git
     - gh
     - btop
     - firefox
+    - libreoffice
+    - vlc
+    - mpv
+    - gimp
+    - python3
+    - python3-pip
+    - pipx
+    - uv
+    - nodejs
+    - java-25-openjdk
+    - java-latest-openjdk
+    - bottles
+    - gamemode
+    - google-noto-emoji-fonts
+    - google-noto-color-emoji-fonts
+    - google-noto-serif-cjk-fonts
+    - fira-code-fonts
+    # STANDALONE REPO
+    - mullvad-vpn
     # TERRA
     - terra-release
     - terra-release-extras
     - terra-gpg-keys
+    - protonplus
+    - blockbench
+    - localsend-bin
+    - prismlauncher
+    - zed
+    - opencode
+    - lact
     # COPR
     - ghostty
     # URLs
