@@ -38,10 +38,12 @@ install:
     - java-latest-openjdk
     - bottles
     - gamemode
+    # FONTS
     - google-noto-emoji-fonts
     - google-noto-color-emoji-fonts
     - google-noto-serif-cjk-fonts
     - fira-code-fonts
+    # --- NOT FROM FEDORA PACKAGES ---
     # STANDALONE REPO
     - mullvad-vpn
     # TERRA
