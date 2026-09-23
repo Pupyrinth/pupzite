@@ -23,4 +23,5 @@ configurations:
       - org.mozilla.thunderbird
       - com.makemkv.MakeMKV
       - org.ferdium.Ferdium
+      - com.jetbrains.IntelliJ-IDEA-Community
   - scope: user # Also add Flathub user repo, but no user packages
