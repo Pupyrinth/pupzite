@@ -42,6 +42,11 @@ modules:
       # Make zsh the default shell
       - "useradd -D --shell /usr/bin/zsh"
 
+  - type: script
+    scripts:
+      - set-plymouth-theme.sh
+  - type: initramfs
+
   - type: os-release
     properties:
       ID: pupzite

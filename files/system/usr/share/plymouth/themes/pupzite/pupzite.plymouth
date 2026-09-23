@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Pupzite
+Description=Like Bazzite, but with floppy ears 🐶
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/pupzite
+ScriptFile=/usr/share/plymouth/themes/pupzite/pupzite.script

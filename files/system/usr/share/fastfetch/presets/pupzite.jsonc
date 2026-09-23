@@ -1,0 +1,35 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "kernel",
+    "break",
+
+    "de",
+    "wm",
+    "break",
+
+    "terminal",
+    "shell",
+    "packages",
+    "break",
+
+    "cpu",
+    "gpu",
+    "memory",
+    "break",
+
+    {
+      "type": "command",
+      "key": "OS Age",
+      "text": "hourglass",
+    },
+    "uptime",
+    "break",
+
+    "colors",
+  ],
+  "logo": "/usr/share/fastfetch/logos/paw",
+}

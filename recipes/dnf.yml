@@ -10,6 +10,7 @@ repos:
   files:
     - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     - https://repository.mullvad.net/rpm/stable/mullvad.repo
+    - https://download.opensuse.org/repositories/home:Alxhr0/Fedora_44/home:Alxhr0.repo
 install:
   packages:
     - vim
@@ -54,6 +55,8 @@ install:
     - zed
     - opencode
     - lact
+    #  ALXHR0
+    - hourglass
     # COPR
     - ghostty
     # URLs
