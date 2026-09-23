@@ -5,4 +5,4 @@
 # builds actually ran successfully without any errors!
 set -oue pipefail
 
-plymouth-plymouth-set-default-theme pupzite
+plymouth-set-default-theme pupzite
