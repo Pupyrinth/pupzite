@@ -16,66 +16,66 @@ repos:
     - https://packages.microsoft.com/keys/microsoft.asc
 install:
   packages:
-    - vim
-    - vorta
-    - zsh
-    - fzf
-    - zoxide
-    - gnome-disk-utility
-    - fastfetch
-    - hyfetch
-    - git
-    - gh
+    - bottles
     - btop
+    - fastfetch
     - firefox
-    - libreoffice
-    - vlc
-    - mpv
+    - fzf
+    - gamemode
+    - gh
     - gimp
-    - python3
-    - python3-pip
-    - pipx
-    - uv
-    - nodejs
+    - git
+    - gnome-disk-utility
+    - hyfetch
     - java-25-openjdk
     - java-latest-openjdk
-    - bottles
-    - gamemode
+    - libreoffice
+    - mpv
+    - nodejs
+    - pipx
+    - python3
+    - python3-pip
+    - uv
+    - vim
+    - vlc
+    - vorta
+    - zsh
+    - zoxide
     # FONTS
+    - fira-code-fonts
     - google-noto-emoji-fonts
     - google-noto-color-emoji-fonts
     - google-noto-serif-cjk-fonts
-    - fira-code-fonts
     # --- NOT FROM FEDORA PACKAGES ---
     # STANDALONE REPO
-    - mullvad-vpn
     - code
+    - mullvad-vpn
     # TERRA
     - terra-release
     - terra-release-extras
     - terra-gpg-keys
-    - protonplus
     - blockbench
+    - lact
     - localsend-bin
     - prismlauncher
-    - lact
+    - protonplus
     #  ALXHR0
     - hourglass
     # COPR
     - ghostty
     # URLs
-    - https://vencord.dev/download/vesktop/amd64/rpm
     - https://opencode.ai/download/stable/linux-x64-rpm
+    - https://vencord.dev/download/vesktop/amd64/rpm
 remove:
   packages:
+    - bazaar
+    - bazzite-portal
+    - input-remapper
+    - kdeconnectd
+    - kde-connect
+    - kde-connect-libs
+    - krunner-bazaar
+    - topgrade
     - waydroid
     - waydroid-selinux
-    - input-remapper
-    - bazaar
-    - krunner-bazaar
-    - kde-connect
-    - kdeconnectd
-    - kde-connect-libs
-    - topgrade
-    - bazzite-portal
     # Bold Brew
