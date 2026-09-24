@@ -14,6 +14,7 @@ image-version: stable # You can pin to a specific version of Fedora as well
 modules:
   - from-file: dnf.yml
   - from-file: flatpak.yml
+  - from-file: fonts.yml
 
   - type: files
     files:

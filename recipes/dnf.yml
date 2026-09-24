@@ -41,11 +41,6 @@ install:
     - vorta
     - zsh
     - zoxide
-    # FONTS
-    - fira-code-fonts
-    - google-noto-emoji-fonts
-    - google-noto-color-emoji-fonts
-    - google-noto-serif-cjk-fonts
     # --- NOT FROM FEDORA PACKAGES ---
     # STANDALONE REPO
     - code
