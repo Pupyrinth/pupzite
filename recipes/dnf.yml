@@ -26,6 +26,7 @@ install:
     - gimp
     - git
     - gnome-disk-utility
+    - gwenview
     - hyfetch
     - java-25-openjdk
     - java-latest-openjdk
