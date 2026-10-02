@@ -60,6 +60,7 @@ install:
     # COPR
     - ghostty
     # URLs
+    - https://github.com/Querz/mcaselector/releases/download/2.9/mcaselector-2.9-x64.rpm
     - https://opencode.ai/download/stable/linux-x64-rpm
     - https://vencord.dev/download/vesktop/amd64/rpm
 remove:
