@@ -11,6 +11,7 @@ repos:
     - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     - https://repository.mullvad.net/rpm/stable/mullvad.repo
     - https://download.opensuse.org/repositories/home:Alxhr0/Fedora_44/home:Alxhr0.repo
+    - https://pkgs.fluxer.com/rpm/fluxer.repo
     - vscode.repo
   keys:
     - https://packages.microsoft.com/keys/microsoft.asc
@@ -47,6 +48,7 @@ install:
     # STANDALONE REPO
     - code
     - mullvad-vpn
+    - fluxer
     # TERRA
     - terra-release
     - terra-release-extras
