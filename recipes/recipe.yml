@@ -12,6 +12,10 @@ image-version: stable # You can pin to a specific version of Fedora as well
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - type: script
+    snippets:
+      - sed -i '/^\[terra\]$/,/^\[/{s/^enabled=0$/enabled=1/}' /etc/yum.repos.d/terra.repo
+
   - from-file: dnf.yml
   - from-file: flatpak.yml
   - from-file: fonts.yml
