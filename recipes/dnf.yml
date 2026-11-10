@@ -50,14 +50,14 @@ install:
     - mullvad-vpn
     # - fluxer
     # TERRA
-    - terra-release
-    - terra-release-extras
-    - terra-gpg-keys
-    - blockbench
-    - lact
-    - localsend-bin
-    - prismlauncher
-    - protonplus
+    # - terra-release
+    # - terra-release-extras
+    # - terra-gpg-keys
+    # - blockbench
+    # - lact
+    # - localsend-bin
+    # - prismlauncher
+    # - protonplus
     #  ALXHR0
     - hourglass
     # COPR

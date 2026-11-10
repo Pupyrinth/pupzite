@@ -17,6 +17,11 @@ modules:
       - sed -i '/^\[terra\]$/,/^\[/{s/^enabled=0$/enabled=1/}' /usr/share/dnf5/repos.d/terra.repo
 
   - from-file: dnf.yml
+
+  - type: script
+    scripts:
+      - stupid-bazzite-dnf-terra-stuff.sh
+
   - from-file: flatpak.yml
   - from-file: fonts.yml
 
