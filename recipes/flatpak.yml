@@ -18,4 +18,8 @@ configurations:
       - com.makemkv.MakeMKV
       - org.ferdium.Ferdium
       - com.jetbrains.IntelliJ-IDEA-Community
+      - net.blockbench.Blockbench
+      - org.localsend.localsend_app
+      - org.prismlauncher.PrismLauncher
+      - com.vysp3r.ProtonPlus
   - scope: user # Also add Flathub user repo, but no user packages
