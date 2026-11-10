@@ -8,7 +8,7 @@ repos:
     enable:
       - scottames/ghostty
   files:
-    - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+    #- https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     - https://repository.mullvad.net/rpm/stable/mullvad.repo
     - https://download.opensuse.org/repositories/home:Alxhr0/Fedora_44/home:Alxhr0.repo
     # - https://pkgs.fluxer.com/rpm/fluxer.repo
@@ -58,7 +58,6 @@ install:
     - localsend-bin
     - prismlauncher
     - protonplus
-    - vesktop
     #  ALXHR0
     - hourglass
     # COPR
@@ -67,6 +66,7 @@ install:
     #- https://pkgs.fluxer.com/desktop/stable/linux/x64/latest/rpm
     - https://github.com/Querz/mcaselector/releases/download/2.9/mcaselector-2.9-x64.rpm # https://github.com/querz/mcaselector
     - https://opencode.ai/download/stable/linux-x64-rpm
+    - https://vencord.dev/download/vesktop/amd64/rpm
 remove:
   packages:
     - bazaar
