@@ -5,4 +5,7 @@
 # builds actually ran successfully without any errors!
 set -oue pipefail
 
-dnf -y install --repo='terra' terra-release terra-release-extras terra-gpg-keys blockbench lact localsend-bin prismlauncher protonplus
+rm /usr/share/dnf5/repos.d/terra.repo
+dnf -y in --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
+
+dnf -y install --repo='terra' terra-release-extras terra-gpg-keys blockbench lact localsend-bin prismlauncher protonplus
