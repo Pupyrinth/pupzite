@@ -14,7 +14,7 @@ image-version: stable # You can pin to a specific version of Fedora as well
 modules:
   - type: script
     snippets:
-      - sed -i '/^\[terra\]$/,/^\[/{s/^enabled=0$/enabled=1/}' /etc/yum.repos.d/terra.repo
+      - sed -i '/^\[terra\]$/,/^\[/{s/^enabled=0$/enabled=1/}' /usr/share/dnf5/repos.d/terra.repo
 
   - from-file: dnf.yml
   - from-file: flatpak.yml
